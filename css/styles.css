@@ -226,7 +226,7 @@ ul {
   font-size: 14px;
   line-height: 1.17;
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 }
 .navmenu-index > .menu {
   color: var(--tenth-color);
