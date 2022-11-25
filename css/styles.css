@@ -10,6 +10,11 @@
   --nineth-color: #000000;
   --tenth-color: black;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   padding: 0 15px;
   width: 100%;
@@ -111,20 +116,21 @@ ul {
 .mail-telephone {
   display: flex;
   text-align: center;
-  gap: 50px;
+  gap: 30px;
 }
 .mailandtel {
-  display: flex;
-  margin-top: 32px;
+  margin-left: 50px;
 }
 
 .mail-adress {
-  margin: 0;
-  padding: 0;
   color: var(--third-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 .telephone {
   color: var(--third-color);
+  font-size: 14px;
 }
 
 .lorem {
@@ -134,10 +140,20 @@ ul {
   justify-content: center;
   gap: 30px;
 }
+.list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
 
 .loremparagraph {
   margin-top: 10px;
   width: 270px;
+}
+.loremparagraph {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--third-color);
 }
 
 .lorem-h3 {
@@ -166,11 +182,7 @@ ul {
   display: inline;
   margin: 0 auto;
 }
-.loremparagraph {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--third-color);
-}
+
 .lorem-icons-menu {
   display: flex;
   justify-content: center;
@@ -215,14 +227,14 @@ ul {
   font-size: 14px;
   line-height: 1.17;
   display: flex;
-  margin-bottom: 25px;
+  align-items: baseline;
 }
 .navmenu-portfolio {
   text-decoration: none;
   font-size: 14px;
   line-height: 1.17;
   display: flex;
-  margin-bottom: 126px;
+  align-items: baseline;
 }
 .navmenu-index > .menu {
   color: var(--tenth-color);
@@ -239,7 +251,6 @@ ul {
 .studioname {
   color: var(--fifth-color);
   margin: 0 auto;
-  padding-top: 24px;
 }
 
 .joinus-section {
@@ -279,11 +290,8 @@ ul {
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
 }
-.joinus-link:hover,
+.joinus-link,
 .joinus-link:focus {
-  background-color: var(--main-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -321,6 +329,14 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 93px;
+}
+.studioname-footer {
+  color: var(--main-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 .black {
@@ -350,9 +366,6 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
-  margin-top: 32px;
-  margin-left: 93px;
 }
 
 .portoflio {
@@ -373,12 +386,24 @@ ul {
 .elementblue:hover svg {
   fill: var(--main-color);
 }
-.buttons-main {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+.button-main {
+  background-color: var(--main-color);
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  padding: 10px 42px 10px 41px;
   border-radius: 4px;
-  border-style: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  display: block;
+  text-decoration: none;
 }
 
 .cityadress {
@@ -404,13 +429,25 @@ address {
 .nonetextstyle {
   font-style: inherit;
 }
-.header-class {
-  border-bottom: 1px solid #ececec;
-}
+
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  padding-top: 24px;
+  margin-bottom: 32px;
+}
+
+.header-wrapper-portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  margin-bottom: 32px;
+}
+.header-class {
+  padding: 24 0;
+  border-bottom: 1px solid #ececec;
 }
 
 .lorem-margin:last-child {
@@ -504,6 +541,8 @@ containter {
   justify-content: center;
   gap: 10px;
   margin-bottom: 30px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sm-link {
@@ -571,6 +610,10 @@ containter {
 .picture-margin:last-child {
   margin-right: 0;
 }
+.border-solid {
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
 
 .buttons-margin {
   margin-right: 8px;
@@ -610,15 +653,6 @@ containter {
 
 .telephone-two {
   color: var(--third-color);
-}
-
-.buttons-portfolio {
-  justify-content: center;
-  padding-bottom: 50px;
-  display: flex;
-  gap: 8px;
-  border-radius: 4px;
-  margin-top: 94px;
 }
 
 .buttons-portfolio {
@@ -684,13 +718,14 @@ containter {
   cursor: pointer;
 }
 .project {
+  flex-basis: calc((100% - 60px) / 3);
   background-color: var(--fourth-color);
   box-sizing: border-box;
   text-decoration: none;
-  border: 1px #eeeeee solid;
 }
 
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -702,7 +737,6 @@ containter {
   font-size: 18px;
   line-height: 36px;
   color: var(--fifth-color);
-  margin-top: 20px;
   padding-left: 24px;
 }
 
@@ -894,21 +928,18 @@ textarea {
   height: 30px;
   top: 8px;
   right: 8px;
-  bottom: 543px;
-  left: 490px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   border-radius: 50px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.vector-button {
-  left: 22.22%;
-  right: 16.67%;
-  top: 16.67%;
-  bottom: 22.22%;
+.vector-button svg {
+  position: absolute;
+  top: 2px;
+  right: 2px;
 }
+
 .background-pictures {
   position: absolute;
   display: flex;
@@ -949,7 +980,7 @@ textarea {
   background-color: #2196f3;
   width: 100%;
   border-radius: 2px;
-  bottom: -26px;
+  bottom: -36px;
   left: 0px;
 }
 
@@ -972,7 +1003,7 @@ textarea {
   background-color: #2196f3;
   width: 100%;
   border-radius: 2px;
-  bottom: -26px;
+  bottom: -36px;
   left: 0px;
 }
 .project-blue {
@@ -997,6 +1028,7 @@ li:hover p {
   line-height: 28px;
   color: #ffffff;
   letter-spacing: 0.03em;
+  padding: 49px 45px 49px 24px;
 }
 
 .project-link {
