@@ -60,11 +60,13 @@ ul {
 .mail-icon {
   fill: var(--third-color);
   margin-right: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .smartphone-icon {
   fill: var(--third-color);
   margin-right: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail:hover svg {
   fill: var(--main-color);
@@ -72,7 +74,6 @@ ul {
 
 .mail:focus svg {
   fill: var(--main-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .h1 {
@@ -83,25 +84,6 @@ ul {
   text-transform: uppercase;
   max-width: 696px;
 }
-.button-main {
-  background-color: var(--main-color);
-  font-weight: 700;
-  color: white;
-  cursor: pointer;
-  padding: 10px 42px 10px 41px;
-  border-radius: 4px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  border: none;
-  display: block;
-  text-decoration: none;
-}
 
 .agency {
   color: var(--fifth-color);
@@ -111,9 +93,11 @@ ul {
 .portfolio {
   color: var(--fifth-color);
   margin-right: 46px;
+  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .contacts {
   color: var(--fifth-color);
+  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .mail-telephone {
@@ -137,7 +121,6 @@ ul {
 }
 
 .lorem {
-  margin-top: 94px;
   display: flex;
   line-height: 1.14;
   justify-content: center;
@@ -264,7 +247,6 @@ ul {
 
 .joinus-icons {
   display: flex;
-  margin-top: 20px;
 }
 .joinus-text {
   margin-top: 72px;
@@ -273,6 +255,7 @@ ul {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 .joinus-link svg {
   fill: var(--fourth-color);
@@ -295,6 +278,7 @@ ul {
   background: rgba(255, 255, 255, 0.1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .joinus-link:hover,
 .joinus-link:focus {
   background-color: var(--main-color);
@@ -351,6 +335,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .white {
@@ -387,10 +372,10 @@ ul {
 .elementblue:active {
   color: var(--main-color);
 }
-.elementblue:focus svg {
+
+.elementblue {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .button-main {
   background-color: var(--main-color);
   font-weight: 700;
@@ -492,9 +477,7 @@ address {
 .black:hover {
   color: var(--main-color);
 }
-.black .white:focus {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .white:hover {
   color: var(--main-color);
 }
@@ -564,7 +547,6 @@ containter {
   background-color: var(--main-color);
   color: #fff;
   transition: 250ms;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sm-team-icon:hover svg,
@@ -572,11 +554,9 @@ containter {
   fill: var(--fourth-color);
 }
 
-.sm-team-icon:focus svg {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .sm-team-icon {
   fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-clients {
   display: flex;
@@ -782,6 +762,8 @@ containter {
   border-radius: 4px;
   transform: translateX(-50%) translateY(-50%);
   z-index: 1000;
+  transition: transform 0.5s;
+  transition-timing-function: cubic-bezier(0.71, 1.51, 0.4, 2);
 }
 .form-data {
   margin: 40px 40px 30px 40px;
@@ -968,11 +950,8 @@ textarea {
   position: relative;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 140;
-  letter-spacing: 0, 82em;
   text-decoration: none;
   color: var(--fifth-color);
-  transition-property: color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .agency-bottom::after {
@@ -995,7 +974,6 @@ textarea {
   text-decoration: none;
   color: var(--fifth-color);
   transition-property: color;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-bottom::after {
   position: absolute;
